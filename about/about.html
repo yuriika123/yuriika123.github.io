@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style-about.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="background-video-wrapper">
+            <video src="About_backgroundMovie/About_backgroundMovie_1.MOV" loop autoplay muted playsinline class="background-video"></video>
+            <video src="About_backgroundMovie/About_backgroundMovie_2.MOV" loop autoplay muted playsinline class="background-video"></video>
+            <video src="About_backgroundMovie/About_backgroundMovie_3.MOV" loop autoplay muted playsinline class="background-video"></video>
+            <video src="About_backgroundMovie/About_backgroundMovie_4.MOV" loop autoplay muted playsinline class="background-video"></video>
+            <video src="About_backgroundMovie/About_backgroundMovie_5.MOV" loop autoplay muted playsinline class="background-video"></video>
+            <video src="About_backgroundMovie/About_backgroundMovie_Last.MP4" loop autoplay muted playsinline class="background-video"></video>
+        </div>
+        <div class="overlay-wrapper">
+            <h1 class="project-title">Projects</h1>
+            <div class="project-wrapper">
+                <h2>Sakanaction Music Map</h2>
+                <div>サカナクションの楽曲データをもとに、指定した曲に似ている楽曲を自動でリストアップするWebアプリケーションです。PyScript（ブラウザ上でPythonを動かす仕組み）を利用し、楽曲の特徴量（テンポ・明るさ・シンセ度・かっこよさ）をもとにユークリッド距離で類似度を計算します。</br>
+                    ・曲名を入力すると、その曲に似ている楽曲を自動でリストアップ</br>
+                    ・CSVファイルで楽曲データを管理</br>
+                    ・ブラウザのみで動作（サーバー不要）
+                </div>
+                <div class="project-button-wrapper">
+                    <a href="https://github.com/yuriika123/SakanactionVector">
+                        <span>Repository</span>
+                    </a>
+                    <a href="https://yuriika123.github.io/SakanactionVector/">
+                        <span>GitHub Pages</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-wrapper">
+                <h2>Ladder of Emotion</h2>
+                <div>ポリヴェーガル理論に基づいた9段階の感情ラダーで、日々の感情状態を記録・可視化できるPWA（プログレッシブWebアプリ）です。感情の変化を追跡し、心の健康をサポートします。</br>
+                    ・9段階の感情ラダー（単色・説明付き）からワンクリックで記録</br>
+                    ・感情の変化をグラフで可視化</br>
+                    ・記録履歴を時系列で一覧表示</br>
+                    ・オフライン利用可（Service Worker）
+                </div>
+                <div class="project-button-wrapper">
+                    <a href="https://github.com/yuriika123/LadderOfEmotion">
+                        <span>Repository</span>
+                    </a>
+                    <a href="https://yuriika123.github.io/LadderOfEmotion/">
+                        <span>GitHub Pages</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-wrapper">
+                <h2>Flask ログインシステム</h2>
+                <div>FlaskとFlask-SQLAlchemyを使用して作成した、基本的なユーザー登録・ログイン・ログアウト機能を持つWebアプリケーションです。セッション管理によるページの保護も実装しています。</br>
+                    ・ユーザー新規登録・ログイン・ログアウト</br>
+                    ・セッション管理によるページ保護</br>
+                    ・Python・Flask・SQLiteを使用
+                </div>
+                <div class="project-button-wrapper">
+                    <a href="https://github.com/yuriika123/flask-login-test">
+                        <span>Repository</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script-about.js"></script>
+    </body>
+</html>
