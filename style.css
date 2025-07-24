@@ -1,0 +1,96 @@
+/* ===== ベース設定 ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+/* ===== 背景動画 ===== */
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* ===== オーバーレイ全体ラッパー ===== */
+.overlay-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* ===== オーバーレイテキスト・ボタン共通 ===== */
+.overlay-text,
+#open-button {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15em;
+    min-width: 0;
+    max-width: 90vw;
+    box-sizing: border-box;
+}
+
+.overlay-text {
+    padding: 1em 2em;
+    font-size: 56px;
+    margin-bottom: 1.5em;
+}
+
+#open-button {
+    padding: 0.2em 0.7em;
+    font-size: 56px;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+/* ===== レスポンシブ（スマホ・タブレット） ===== */
+@media (max-width: 768px) {
+    html, body {
+        font-size: 14px;
+    }
+    .overlay-text {
+        padding: 0.8em 1.2em;
+        font-size: 7vw;
+        margin-bottom: 1em;
+    }
+    #open-button {
+        padding: 0.8em 1.2em;
+        font-size: 7vw;
+    }
+}
