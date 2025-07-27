@@ -32,7 +32,7 @@ html, body {
 /* ===== オーバーレイ全体ラッパー ===== */
 .overlay-wrapper {
     position: absolute;
-    top: 145%; /* ここを調節 */
+    top: 185%; /* ここを調節 */
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -118,7 +118,7 @@ html, body {
         font-size: 14px;
     }
     .overlay-wrapper {
-        top: 172%; /* ここを調節 */
+        top: 212%; /* ここを調節 */
     }
     .project-title {
         padding: 0.8em 1.2em;
